@@ -8,6 +8,7 @@ var webpackHotMiddleware = require('webpack-hot-middleware');
 var config = require('../webpack.config');
 var router = express.Router();
 var jwt = require('jsonwebtoken');
+var socket = require('socket.io');
 
 
 //initiate express
@@ -95,10 +96,16 @@ app.get('*', function(req, res){
   res.sendFile(path.resolve(__dirname, '../client', 'index.html'))
 });
 
+
 //set and run the port and server
 app.set('port', process.env.PORT || 8080);
 var port = app.get('port');
-app.listen(port);
+var server = app.listen(port);
 console.log("Server listening on PORT", port);
+
+//connect socket to express
+var io = new socket(server, {path: '/api/chat'})
+//establish socket communicatio and events
+var socketEvents = require('./chat/socket')(io);
 
 module.exports = app;

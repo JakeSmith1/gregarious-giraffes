@@ -76,6 +76,8 @@
     "redux-promise": "^0.5.3",
     "redux-router": "^1.0.0-beta4",
     "redux-thunk": "^2.1.0",
-    "request": "^2.76.0"
+    "request": "^2.76.0",
+    "socket.io": "^1.5.1",
+    "socket.io-client": "^1.5.1"
   }
 }
