@@ -1,0 +1,114 @@
+.events {
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+    .container {
+        max-width: 100%;
+        width: 100%;
+        .banner {
+            text-align: center;
+            color: white;
+            background: $dark-blue;
+            margin-bottom: 20px;
+        }
+
+        .main-container {
+            margin-bottom: 40px;
+            .eventList {
+
+
+
+                .container {
+                    padding: 0;
+                }
+                .demo-card {
+                    .card-block {
+                        .card-blockquote {
+                            .title {
+                                text-decoration: underline;
+                            }
+                            .mobile {
+                                display: block;
+
+                                @media #{$mq-md, $mq-lg, $mq-xlg} {
+                                    display: none;
+                                }
+                            }
+
+                            .trigger {
+                                display: none;
+
+                                @media #{$mq-md, $mq-lg, $mq-xlg} {
+                                    display: block;
+                                }
+                            }
+                            .detail {
+                                font-size: 14px;
+                                a {
+                                    color: $white;
+                                    text-decoration: none;
+
+                                    span {
+                                        display: none;
+                                        font-size: 11px;
+
+                                        @media #{$mq-md, $mq-lg, $mq-xlg} {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                            button {
+                                @include three-d-button($teal-blue);
+                            }
+                        }
+                    }
+                }
+                h1 {
+                    @include section_title($white);
+                }
+
+                .form-group {
+                    color: $dark-blue;
+
+                    input {
+                        border: $input-border;
+                        border-radius: $input-radius;
+                    }
+                }
+
+            }
+            .eventForm {
+                h1 {
+                    @include section_title($white);
+                }
+                .form-group {
+                    color: $dark-blue;
+
+                    .control-label {
+                        display: block;
+                    }
+
+                    #mapSearch,
+                    .selectpicker,
+                    .Select-placeholder,
+                    #formControlsTextarea,
+                    select.form-control,
+                    .Select-Control,
+                    span.input-group {
+                        border: $input-border;
+                        border-radius: $input-radius;
+                    }
+                }
+
+                button {
+                    @include three-d-button($teal-blue);
+                }
+            }
+        }
+
+
+    }
+}

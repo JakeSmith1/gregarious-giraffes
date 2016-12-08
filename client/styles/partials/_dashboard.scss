@@ -1,0 +1,38 @@
+.home {
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+        .banner {
+            text-align: center;
+            background: $dark-blue;
+            margin-bottom: 20px;
+            color: $white;
+        }
+        .feed {
+            .card-block {
+                img {
+                    width: 100px;
+                }
+            }
+        }
+
+        .petNews{
+            .thumbnail {
+                height: 370px;
+
+                img {
+                    margin-top: 15px;
+                }
+                p.snippet {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

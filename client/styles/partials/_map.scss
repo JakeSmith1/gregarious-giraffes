@@ -1,0 +1,15 @@
+.map {
+  .mapSearch {
+    .col-xs-12 {
+      text-align: center;
+      > div {
+        max-width: 800px;
+        height: 500px;
+      }
+    }
+    // .event-modal {
+    //   height: 400px;
+    //   position: fixed;
+    // }
+  }
+}

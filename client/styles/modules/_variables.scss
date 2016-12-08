@@ -1,0 +1,23 @@
+//Colors
+$navy-blue: #02092d;
+$dark-blue: #142d5f;
+$teal-blue: #1764be;
+$light-blue: #ADD8E6;
+$grey: #c7c1be;
+$white: #fff;
+$brown: #89553d;
+$green: #5cb85c;
+
+//This is the form/input styling
+$input-border: 2px solid $dark-blue;
+$input-radius: 5px;
+
+//Border radius on cards
+$card-radius: .10em;
+
+//Media Queries
+$mq-xs: "(max-width: 767px)";
+$mq-sm: "(min-width: 768px) and (max-width: 991px)";
+$mq-md: "(min-width: 992px) and (max-width: 1199px)";
+$mq-lg: "(min-width: 1200px) and (max-width: 1599px)";
+$mq-xlg: "(min-width: 1600px)";
